@@ -4,20 +4,19 @@ function sumMultiplesOfThreeAndFive(below, sum, counter) {
   }
   
   // set the counter and sum if not supplied
-  counter = counter > 0 ? counter : 0;
-  sum  = sum > 0 ? sum : 0;
+  //counter = counter > 0 ? counter : 0;
+  //sum  = sum > 0 ? sum : 0;
   
   const isMultiple = counter % 3 === 0 || counter % 5 === 0;
-  sum = sum + (isMultiple ? counter : 0);
   
-  return sumMultiplesOfThreeAndFive(below, sum, counter + 1);
+  return sumMultiplesOfThreeAndFive(below, sum + (isMultiple ? counter : 0), counter + 1);
 }
 
 function sumBelow() {
   const below = document.getElementById('below').value;
   const start = new Date();
   
-  const sum = sumMultiplesOfThreeAndFive(below);
+  const sum = sumMultiplesOfThreeAndFive(below, 0, 1);
   
   const end = new Date();
   const diff = Math.abs(end - start) / 1000;
