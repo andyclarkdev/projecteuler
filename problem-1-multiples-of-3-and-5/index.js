@@ -16,7 +16,7 @@ function sumBelow() {
   const below = document.getElementById('below').value;
   const start = new Date();
   
-  const sum = sumMultiplesOfThreeAndFive(below, 0, 1);
+  const sum = sumMultiplesOfThreeAndFive(below);
   
   const end = new Date();
   const diff = Math.abs(end - start) / 1000;
