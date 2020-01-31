@@ -1,5 +1,8 @@
 function sumBelow(below, sum, counter) {
-  if (counter >= below) return sum;
+  if (counter >= below) {
+    console.log(`sum ${sum}`);
+    return sum;
+  }
   
   const isMultiple = counter % 3 === 0 || counter % 5 === 0;
   
