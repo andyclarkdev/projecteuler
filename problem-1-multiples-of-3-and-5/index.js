@@ -13,8 +13,15 @@ function sumMultiplesOfThreeAndFive(below, sum, counter) {
   return sumMultiplesOfThreeAndFive(below, sum, counter + 1);
 }
 
-//const below = 1000;
-//const start = new Date();
-//console.log(`Sum of Multiples of 3 and 5 below ${below}: ${sumMultiplesOfThreeAndFive(below)}`);
-//const end = new Date();
-//console.log(`Time to run: ${Math.abs(end - start) / 1000} milliseconds`);
+function sumBelow() {
+  const below = document.getElementById('below').value;
+  const start = new Date();
+  
+  const sum = sumMultiplesOfThreeAndFive(below);
+  
+  const end = new Date();
+  const diff = Math.abs(end - start) / 1000;
+  
+  document.getElementById('answer').innerHTML = sum;
+  document.getElementById('timeToRun').innerHTML = diff;
+}
