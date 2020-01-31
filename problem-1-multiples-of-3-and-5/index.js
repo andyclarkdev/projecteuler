@@ -3,9 +3,9 @@ function sumMultiplesOfThreeAndFive(below, sum, counter) {
     return sum;
   }
   
-  // set the counter and sum if not supplied
-  //counter = counter > 0 ? counter : 0;
-  //sum  = sum > 0 ? sum : 0;
+  // set the sum and counter if not supplied
+  sum  = sum > 0 ? sum : 0;
+  counter = counter > 0 ? counter : 0;
   
   const isMultiple = counter % 3 === 0 || counter % 5 === 0;
   
