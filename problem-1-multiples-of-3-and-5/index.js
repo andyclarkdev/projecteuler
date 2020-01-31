@@ -1,1 +1,4 @@
-console.log('test 1,2');
+function sumBelow(below) {
+  console.log('below: ', below);
+  document.getElementById('#answer').innerHTML = 'answer';
+}
