@@ -7,9 +7,9 @@ function sumMultiplesOfThreeAndFive(below, sum, counter) {
   //counter = counter > 0 ? counter : 0;
   //sum  = sum > 0 ? sum : 0;
   
-  //const isMultiple = counter % 3 === 0 || counter % 5 === 0;
+  const isMultiple = counter % 3 === 0 || counter % 5 === 0;
   
-  return sumMultiplesOfThreeAndFive(below, sum + (counter % 3 === 0 || counter % 5 === 0 ? counter : 0), counter + 1);
+  return sumMultiplesOfThreeAndFive(below, sum + (isMultiple ? counter : 0), counter + 1);
 }
 
 function sumBelow() {
