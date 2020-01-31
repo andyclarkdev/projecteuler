@@ -13,7 +13,9 @@ function sumMultiplesOfThreeAndFive(below, sum, counter) {
 }
 
 function sumBelow() {
-  const below = document.getElementById('below').value + 0;
+  let below = document.getElementById('below').value + 0;
+  below = below > 0 ? below : 0;
+  
   const start = new Date();
   
   const sum = sumMultiplesOfThreeAndFive(below);
