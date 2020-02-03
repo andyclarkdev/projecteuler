@@ -2,7 +2,7 @@
 
 ## Solutions
 * No frameworks, just POJS
-* Minimal UI, no style
+* Minimal UI
 * Code is easy to maintain, performant, and succinct
 
 | Problem        | Solution           | 
