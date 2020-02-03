@@ -1,9 +1,9 @@
 # Project Euler
 
-## Goals
-* No frameworks
-* No style
-* 
+## Solutions
+* No frameworks, just POJS
+* Minimal UI, no style
+* JS is easy to maintain, performant, and succinct
 
 | Problem        | Solution           | 
 | ------------- |:-------------:|
