@@ -3,7 +3,7 @@
 ## Solutions
 * No frameworks, just POJS
 * Minimal UI, no style
-* JS is easy to maintain, performant, and succinct
+* Code is easy to maintain, performant, and succinct
 
 | Problem        | Solution           | 
 | ------------- |:-------------:|
