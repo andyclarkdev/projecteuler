@@ -1,6 +1,5 @@
 // need noprotect to prevent 'too much recursion' or 'possible infinite loop' errors/warnings
 // noprotect
-
 function recursiveSum(below, sum, counter) {
   if (counter >= below) {
     return sum;
@@ -53,4 +52,5 @@ function sum2() {
   document.getElementById('answer2').innerHTML = sum;
   document.getElementById('timeToRun2').innerHTML = diff;
 }
+
 
