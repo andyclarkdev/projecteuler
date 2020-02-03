@@ -1,13 +1,26 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <script src="index.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <h1>problem-1-multiples-of-3-and-5</h1>
-    <label>Below:</label>
-    <input id="below" type="text" />
-    <input type="button" value="Sum" onclick="sumBelow()" />
-    <div><span><strong>Sum:</strong></span> <span id="answer"></span></div>
-    <div><span><strong>Time to run (MS):</strong></span> <span id="timeToRun"></span></div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <a href="/">Home</a>
+  <h1>Problem 1 - Find the sum of all the multiples of 3 or 5 below 1000.</h1>
+  <hr />
+  <h2>Recursive</h2>
+  <label>Sum multiples below:</label>
+  <input id="below1" type="number" min="1" max="100000000" />
+  <input type="button" value="Sum" onclick="sum1()" />
+  <div><span><strong>Sum:</strong></span> <span id="answer1"></span></div>
+  <div><span><strong>Time to run (MS):</strong></span> <span id="timeToRun1"></span></div>
+  
+  <h2>Loop</h2>
+  <label>Sum multiples below:</label>
+  <input id="below2" type="number" min="1" max="100000000" />
+  <input type="button" value="Sum" onclick="sum2()" />
+  <div><span><strong>Sum:</strong></span> <span id="answer2"></span></div>
+  <div><span><strong>Time to run (MS):</strong></span> <span id="timeToRun2"></span></div>
+</body>
 </html>
