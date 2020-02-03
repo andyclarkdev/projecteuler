@@ -17,20 +17,11 @@ function recursiveSum(below, sum, counter) {
 
 
 function loopSum(below) {
-  //const arr = [];
-  
-  //for (let counter = 1; counter < below; counter++) {
-    //if (counter % 3 === 0 || counter % 5 === 0) {
-      //arr.push(counter);
-    //}
-  //}
-  
-  //return arr.reduce((a,b) => a + b, 0);
   let sum = 0;
   
   for (let counter = 1; counter < below; counter++) {
     if (counter % 3 === 0 || counter % 5 === 0) {
-      sum = sum + counter;
+      sum += counter;
     }
   }
   
