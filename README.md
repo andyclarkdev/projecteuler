@@ -2,7 +2,6 @@
 
 * No frameworks, just POJS
 * Minimal UI
-* Code is easy to maintain, performant, and succinct
 
 | Problem        | Solution           | 
 | ------------- |:-------------:|
